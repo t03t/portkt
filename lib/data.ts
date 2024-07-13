@@ -3,6 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import canvaclone from "@/public/canvaclone.png";
+import styleme from "@/public/styleme.png";
+import captiony from "@/public/captiony.png";
 
 export const links = [
   {
@@ -33,52 +35,60 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Software Engineering Internship",
+    location: "Mountain View, CA",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "I interned at a Silicon Valley tech company.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Graduated University",
+    location: "Waltham, MA",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I graduated with a Bachelor's degree in Computer Science from Brandeis University.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2023",
+  },
+  {
+    title: "Software Engineer",
+    location: "Mountain View, CA",
+    description:
+      "I worked as a software engineer at a Silicon Valley tech company.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2023 - 2024",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "San Francisco, CA",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Freeeeeeeelancing",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 - Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Caption-Y",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: canvaclone
+      "A search engine for finding movies and TV shows. Users can enter queries and get results. Queries can be lines from movies or things that have been said in the movie (not necessarily quotes) or descriptions of the plot.",
+    tags: ["Flask", "Python", "PostgreSQL", "React", "ElasticSearch"],
+    imageUrl: captiony
   ,
   },
   {
-    title: "rmtDev",
+    title: "styleMe",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: canvaclone,
+      "StyleMe is a full-stack web application built using Ruby on Rails, designed to provide users with a dynamic platform for exploring and experimenting with different clothing styles and fashion combinations.",
+    tags: ["Ruby on Rails", "PostgreSQL", "Bootstrap", "Amazon S3", "HTML", "CSS", "Javascript", "AJAX", "JQuery"],
+    imageUrl: styleme,
   },
   {
-    title: "Word Analytics",
+    title: "Canva Clone",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A front-end prototype of a Canva clone application created using HTML, CSS, and JavaScript. This project showcases a visually appealing and intuitive user interface for users to design various graphics.",
+    tags: ["HTML", "CSS", "Javascript"],
     imageUrl: canvaclone,
   },
 ] as const;
