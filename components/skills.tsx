@@ -38,7 +38,7 @@ export default function Skills() {
           const Icon = icons[index % icons.length];
           return (
             <motion.li
-              className="bg-gradient-to-r from-gray-700 to-rose-400 text-white rounded-xl px-5 py-3 flex items-center gap-2 shadow-lg"
+              className="bg-gradient-to-r rounded-xl px-5 py-3 flex items-center gap-2 shadow-lg"
               key={index}
               variants={fadeInAnimationVariants}
               initial="initial"
