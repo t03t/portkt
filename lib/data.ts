@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import canvaclone from "@/public/canvaclone.png";
 import styleme from "@/public/styleme.png";
 import captiony from "@/public/captiony.png";
+import terminal from "@/public/terminal.png";
 
 export const links = [
   {
@@ -35,20 +36,36 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Teaching Assistant",
+    location: "Waltham, MA",
+    description:
+      "Teaching Assistant for Advanced Programming in Java and Software Engineering at Brandeis University.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2020-2022",
+  },
+  {
+    title: "Lead Teaching Assistant",
+    location: "Waltham, MA",
+    description:
+      "Lead Teaching Assistant for Operating Systems at Brandeis University.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2022",
+  },
+  {
     title: "Software Engineering Internship",
     location: "Mountain View, CA",
     description:
-      "I interned at a Silicon Valley tech company.",
+      "I interned at a Silicon Valley tech company (Pure Storage).",
     icon: React.createElement(CgWorkAlt),
-    date: "2023",
+    date: "2022",
   },
   {
     title: "Graduated University",
     location: "Waltham, MA",
     description:
-      "I graduated with a Bachelor's degree in Computer Science from Brandeis University.",
+      "I graduated with a Bachelor's degree in Computer Science and minor in Psychology from Brandeis University.",
     icon: React.createElement(LuGraduationCap),
-    date: "2023",
+    date: "2019 - 2023",
   },
   {
     title: "Software Engineer",
@@ -91,6 +108,13 @@ export const projectsData = [
     tags: ["HTML", "CSS", "Javascript"],
     imageUrl: canvaclone,
   },
+  {
+    title: "Unixish",
+    description:
+      "Implemented a Unix shell using Java multi-threading to support background processes, file system, redirection, and text operation commands. Enabled use of basic commands e.g., cd, pwd, ls, >, grep, etc. and concurrent execution of piped commands with &",
+    tags: ["Java", "Multithreading", "Concurrency"],
+    imageUrl: terminal,
+  },
 ] as const;
 
 export const skillsData = [
@@ -104,13 +128,8 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "Prisma",
-  "MongoDB",
-  "Redux",
   "GraphQL",
-  "Apollo",
-  "Express",
   "PostgreSQL",
   "Python",
-  "Django",
-  "Framer Motion",
+  "Java",
 ] as const;
