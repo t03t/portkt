@@ -8,6 +8,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
+import SectionDivider from './section-divider';
 
 export default function Intro() {
 
@@ -19,6 +20,10 @@ export default function Intro() {
         ref={ref}
         id="home"
         className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28">
+        {/* Heading */}
+        <motion.h1 className="sr-only">
+          <span className="font-bold text-slate-950">Introduction</span>
+        </motion.h1>
         <div className="flex items-center justify-center">
           {/* Photo Section */}
           <div className="relative"> 
@@ -50,18 +55,18 @@ export default function Intro() {
             </motion.span>
           </div>
           {/* Text Area with intro Text */}
-          <motion.h1
+          <motion.p
             className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0}}>
-            <p>
+            <span>
               <span className='font-bold'>{`I'm Khadija`}</span>, 
               a <span className='italic font-bold'>freelance software developer</span> and <span className='italic font-bold'>UI/UX Researcher</span>. I specialize in building 
               <span className="font-bold text-sky-700"> intuitive</span> and 
               <span className="font-bold text-green-600"> user-friendly</span> interfaces, and creating 
               <span className="font-bold text-pink-900"> engaging</span> experiences for clients.
-            </p>
-            </motion.h1>
+            </span>
+          </motion.p>
         </div>
 
         <motion.div
