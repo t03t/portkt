@@ -91,8 +91,8 @@ export const projectsData = [
     description:
       "A search engine for finding movies and TV shows. Users can enter queries and get results. Queries can be lines from movies or things that have been said in the movie (not necessarily quotes) or descriptions of the plot.",
     tags: ["Flask", "Python", "PostgreSQL", "React", "ElasticSearch"],
-    imageUrl: captiony
-  ,
+    imageUrl: captiony,
+    imgCaption: "Screenshot of Caption-Y Website showing a search result for 'The Matrix'.",
   },
   {
     title: "styleMe",
@@ -100,6 +100,7 @@ export const projectsData = [
       "StyleMe is a full-stack web application built using Ruby on Rails, designed to provide users with a dynamic platform for exploring and experimenting with different clothing styles and fashion combinations.",
     tags: ["Ruby on Rails", "PostgreSQL", "Bootstrap", "Amazon S3", "HTML", "CSS", "Javascript", "AJAX", "JQuery"],
     imageUrl: styleme,
+    imgCaption: "Screenshot of styleMe application showing a user's profile with a customizable clothing style.",
   },
   {
     title: "Canva Clone",
@@ -107,6 +108,7 @@ export const projectsData = [
       "A front-end prototype of a Canva clone application created using HTML, CSS, and JavaScript. This project showcases a visually appealing and intuitive user interface for users to design various graphics.",
     tags: ["HTML", "CSS", "Javascript"],
     imageUrl: canvaclone,
+    imgCaption: "Screenshot of Canva Clone application showing a user's workspace with a simple design.",
   },
   {
     title: "Unixish",
@@ -114,6 +116,7 @@ export const projectsData = [
       "Implemented a Unix shell using Java multi-threading to support background processes, file system, redirection, and text operation commands. Enabled use of basic commands e.g., cd, pwd, ls, >, grep, etc. and concurrent execution of piped commands with &",
     tags: ["Java", "Multithreading", "Concurrency"],
     imageUrl: terminal,
+    imgCaption: "Screenshot of Unixish shell application showing a user entering commands and seeing their results.",
   },
 ] as const;
 

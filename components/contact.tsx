@@ -44,13 +44,17 @@ export default function Contact() {
                     type="text" 
                     name="senderName" 
                     placeholder="Name" 
-                    required 
+                    required
+                    aria-label="Sender Name"
+                    aria-required="true"
                 />
                 <input 
                     className="h-14 p-4 my-3 rounded-lg border transition-all focus:ring-2 focus:ring-indigo-500"
                     type="email"
                     name="senderEmail"
                     placeholder="Email"
+                    aria-label="Email"
+                    aria-required="true"
                     required
                 />
                 <textarea
@@ -59,6 +63,8 @@ export default function Contact() {
                     placeholder="Your message"
                     required
                     maxLength={5000}
+                    aria-label="Message"
+                    aria-required="true"
                 />
                 <div className="flex justify-center mt-2">
                     <SubmitButton />

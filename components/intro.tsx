@@ -54,10 +54,14 @@ export default function Intro() {
             className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0}}>
-            
-            <span className='font-bold'>{`I\'m Khadija`}</span>, 
-            a <span className='italic font-bold'>freelance software developer</span> and <span className='italic font-bold'>UI/UX Researcher</span>. I specialize in building <span className="underline decoration-sky-500 decoration-4">intuitive</span> and <span className="underline decoration-green-600 decoration-4">user-friendly</span> interfaces, and creating <span className="underline decoration-pink-900 decoration-4 underline-offset-8">engaging</span> experiences for clients.
-          </motion.h1>
+            <p>
+              <span className='font-bold'>{`I'm Khadija`}</span>, 
+              a <span className='italic font-bold'>freelance software developer</span> and <span className='italic font-bold'>UI/UX Researcher</span>. I specialize in building 
+              <span className="font-bold text-sky-700"> intuitive</span> and 
+              <span className="font-bold text-green-600"> user-friendly</span> interfaces, and creating 
+              <span className="font-bold text-pink-900"> engaging</span> experiences for clients.
+            </p>
+            </motion.h1>
         </div>
 
         <motion.div
@@ -74,18 +78,19 @@ export default function Intro() {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
             }}>
-            Contact me here{" "}
+            Contact me {" "}
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
           <a
-            className="group bg-gradient-to-r from-green-500 to-blue-500 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer"
-            href="/resume.pdf" download>
-            Download Resume{" "}
+            className="group bg-gradient-to-r from-green-500 to-blue-500 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 hover:scale-110 active:scale-105 transition cursor-pointer"
+            href="/resume.pdf" download aria-label="Download Resume">
+            Download Resume 
             <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
           </a>
           <a
           className="bg-gradient-to-r from-blue-500 to-cyan-500 p-4 text-white flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer"
           href="https://www.linkedin.com/in/s-khadija-tirmazi-0ba173295/"
+          aria-label="LinkedIn Profile"
           target="_blank">
           <BsLinkedin />
         </a>
@@ -93,6 +98,7 @@ export default function Intro() {
         <a
           className="bg-gradient-to-r from-gray-700 to-black p-4 text-white flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer"
           href="https://github.com/t03t"
+          aria-label="GitHub Profile"
           target="_blank"
         >
           <FaGithubSquare />
