@@ -1,10 +1,14 @@
 import './globals.css'
-import { Playfair_Display } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import Header from '@/components/header'
 import ActiveSectionContextProvider from '@/context/active-section-context'
 import Footer from '@/components/footer'
 
-const pf_display = Playfair_Display({ subsets: ['latin'] })
+const pf_display = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Khadija\'s Portfolio',
